@@ -10,7 +10,14 @@ import utilidades.ConexionBD;
 public class PruebaConexion {
 
 	public static void main(String[] args) {
+		System.out.println("Los datos de los fabricante son: ");
+		mostrarFabricantes();
 		
+
+	}
+	
+	// consulta select sobre la tabla de fabricantes.
+	public static void mostrarFabricantes() {
 		ConexionBD conexionBD= new ConexionBD();
 		
 		System.out.println("Conectando a la base de datos...");
@@ -48,7 +55,6 @@ public class PruebaConexion {
 		}
 		
 		conexionBD.desconectar();
-
 	}
 
 }
